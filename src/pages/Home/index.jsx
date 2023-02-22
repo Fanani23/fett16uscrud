@@ -3,20 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-// const userList = [
-//   { id: 1, name: "John Doe", email: "john.doe@example.com" },
-//   { id: 2, name: "Jane Doe", email: "jane.doe@example.com" },
-//   { id: 3, name: "Mark Smith", email: "mark.smith@example.com" },
-//   { id: 4, name: "Mary Smith", email: "mary.smith@example.com" },
-//   { id: 5, name: "David Johnson", email: "david.johnson@example.com" },
-//   { id: 6, name: "Linda Johnson", email: "linda.johnson@example.com" },
-//   { id: 7, name: "John Smith", email: "john.smith@example.com" },
-//   { id: 8, name: "Jane Smith", email: "jane.smith@example.com" },
-//   { id: 9, name: "Mark Johnson", email: "mark.johnson@example.com" },
-//   { id: 10, name: "Mary Johnson", email: "mary.johnson@example.com" },
-//   { id: 11, name: "David Smith", email: "david.smith@example.com" },
-//   { id: 12, name: "Linda Smith", email: "linda.smith@example.com" },
-// ];
 
 const Home = () => {
   const [page, setPage] = useState(1);
@@ -33,7 +19,7 @@ const Home = () => {
   };
   const fetchData = async () => {
     const token = localStorage.getItem("token");
-    const response = await axios.get(`http://localhost:3069/users`, {
+    const response = await axios.get(`https://bett16uscrud.vercel.app/users`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

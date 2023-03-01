@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import assets from "../../../assets";
 import { MdMailOutline, MdOutlineLock } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -61,7 +60,7 @@ const Login = () => {
               <div className="relative w-full mb-6">
                 <p
                   type="button"
-                  className="text-end text-sm text-lime-400"
+                  className="cursor-pointer text-end text-sm text-lime-400"
                   onClick={() => navigate("/register")}
                 >
                   Don't have an account?

@@ -150,7 +150,7 @@ const Register = () => {
                 <p
                   type="button"
                   className="text-end text-sm text-lime-400"
-                  onClick={() => navigate("/login")}
+                  onClick={() => navigate("/")}
                 >
                   Already have an account?
                 </p>
